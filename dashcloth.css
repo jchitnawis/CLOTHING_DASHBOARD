@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    min-height: 100vh;
+
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1,h2{
+    color: rgb(235, 233, 243);
+}
+.btn{
+     background: crimson;
+     color: bisque;
+     padding: 5px 10px;
+     text-align: center;
+
+}
+.btn :hover{
+    color: rgb(182, 9, 81);
+    background: wheat;
+    padding: 3px 8px;
+    border: 2px solid;
+}
+.side-menu{
+ position: fixed;
+ background: rgb(236, 11, 135);
+ width: 20vw;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+}
+.side-menu .brand-name{
+    height: 15vh;
+    padding: 10px 40px;
+    align-items: center;
+    justify-items: center;
+}
+.side-menu ul{
+ font-size: 24px;
+ padding: 10px 40px;
+ color: blanchedalmond;
+ display: flex;
+ align-items: center;
+}
+.side-menu ul :hover{
+    background: rgb(241, 244, 245);
+    color: hotpink;
+
+}
+.side-menu li :hover{
+    background: coral;
+    color: rgb(231, 212, 212);
+}
+.container{
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: rgb(248, 246, 248);
+}
+.container .header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 black;
+}
+.container .header .nav{
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.container .header .nav .search{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+.container .header .nav .search input[type=text]{
+    border: navajowhite;
+    background: whitesmoke;
+    padding: 10px;
+    width: 50;
+}
+.container .header .nav .search button{
+    width: 40px;
+    height: 40px;
+    border: honeydew;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .header .nav .user{
+    flex: 1;
+   /* // background-color: palevioletred; */
+}
+.container .content{
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+}
+.container .content .cards{
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-self: space-between;
+    flex-wrap: wrap;
+}
+
+.container .content .cards .card{
+    width: 250px;
+    height: 150px;
+    background-color: rgb(235, 139, 13);
+    margin: 20px 10px;
+}
